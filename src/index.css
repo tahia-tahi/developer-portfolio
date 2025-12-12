@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+font-family: 'Poppins', sen-serif;
+}
+
+h1,h2{
+font-family: 'Roboto', sen-serif;
+}
