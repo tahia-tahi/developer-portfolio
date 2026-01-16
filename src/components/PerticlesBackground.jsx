@@ -70,7 +70,7 @@ const PerticlesBackground = () => {
 
 
   return (
-    <canvas ref={canvasRef} className='fixed top-0 left-0 h-full w-full pointer-events-none z-0'>
+    <canvas ref={canvasRef} className='absolute top-0 left-0 h-full w-full pointer-events-none z-0'>
 
     </canvas>
   )
