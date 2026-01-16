@@ -1,3 +1,4 @@
+import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
@@ -9,16 +10,21 @@ import Skills from "./sections/Skills";
 import Testimonial from "./sections/Testimonial";
 
 export default function App() {
-  return(
-    <div>
+return (
+
+    <div className="relative gradient text-white flex flex-col min-h-screen">
+      <CustomCursor/>
       <Navbar/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Experience/>
-      <Testimonial/>
-      <Contact/>
+      <main className="grow">
+        <Home/>
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Experience/>
+        <Testimonial/>
+        <Contact/>
+      </main>
+      
       <Footer/>
     </div>
   )

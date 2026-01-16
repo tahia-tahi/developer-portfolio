@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 body {
 font-family: 'Poppins', sen-serif;
@@ -6,4 +9,28 @@ font-family: 'Poppins', sen-serif;
 
 h1,h2{
 font-family: 'Roboto', sen-serif;
+}
+
+@theme {
+  /* Core Brand Colors */
+  --color-primary: #39e1d9;
+  --color-secondary: #373a75;
+  --color-dark-base: #11463e;
+
+  /* Custom UI Colors */
+  --color-background: #0a1917; /* Even darker version of your green for depth */
+  --color-foreground: #f8fafc;
+  
+  /* Animations for your custom cursor/glows */
+  --animate-pulse-slow: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Shadcn variables setup (using your hex colors) */
+:root {
+  --background: 172 60% 7%; /* Derived from #11463E */
+  --foreground: 0 0% 98%;
+  --primary: 176 72% 55%;    /* #39E1D9 */
+  --secondary: 237 36% 34%;  /* #373A75 */
+  --accent: 176 72% 55%;
+  --radius: 0.75rem;
 }
