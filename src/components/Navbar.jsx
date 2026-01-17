@@ -1,27 +1,27 @@
 import { motion } from "framer-motion";
-import { HiHome, HiUser, HiBriefcase, HiCpuChip, HiChatBubbleLeftRight, HiDocumentText } from "react-icons/hi2";
+import { HiHome, HiUser, HiBriefcase, HiCpuChip, HiChatBubbleLeftRight, HiCodeBracketSquare } from "react-icons/hi2";
 
 export default function Navbar() {
   const navLinks = [
     { name: "Home", icon: <HiHome />, href: "#home" },
     { name: "About", icon: <HiUser />, href: "#about" },
+    { name: "Skills", icon: <HiCodeBracketSquare />, href: "#skills" },
     { name: "Services", icon: <HiCpuChip />, href: "#services" },
     { name: "Work", icon: <HiBriefcase />, href: "#projects" },
-    { name: "Resume", icon: <HiDocumentText />, href: "#resume" },
     { name: "Contact", icon: <HiChatBubbleLeftRight />, href: "#contact" },
   ];
 
-return (
+  return (
     <nav className="fixed z-100
       /* Mobile: Top Center */
       top-0 left-0 w-full flex justify-center py-4 px-4
-
+ HiCodeBracket
       /* Medium/Tablet: Still Top Center but more compact */
       md:top-4 md:left-1/2 md:-translate-x-1/2 md:w-auto
       
       /* Desktop/Large: Right Side Center */
       lg:top-1/2 lg:right-6 lg:left-auto lg:-translate-y-1/2 lg:translate-x-0 lg:w-auto">
-      
+
       <div className="flex 
         /* Layout change */
         flex-row lg:flex-col 
@@ -30,7 +30,7 @@ return (
         bg-white/5 backdrop-blur-xl border border-white/10 
         px-3 py-2 lg:px-2 lg:py-5 
         rounded-full shadow-2xl">
-        
+
         {navLinks.map((link, index) => (
           <motion.a
             key={index}
