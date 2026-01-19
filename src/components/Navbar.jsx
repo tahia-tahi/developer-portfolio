@@ -1,13 +1,16 @@
 import { motion } from "framer-motion";
-import { HiHome, HiUser, HiBriefcase, HiCpuChip, HiChatBubbleLeftRight, HiCodeBracketSquare } from "react-icons/hi2";
+import { HiHome, HiUser, HiBriefcase, HiCpuChip, HiChatBubbleLeftRight, HiCodeBracketSquare, HiAcademicCap, HiStar } from "react-icons/hi2";
+import { href } from "react-router";
 
 export default function Navbar() {
   const navLinks = [
     { name: "Home", icon: <HiHome />, href: "#home" },
     { name: "About", icon: <HiUser />, href: "#about" },
     { name: "Skills", icon: <HiCodeBracketSquare />, href: "#skills" },
+    { name: "Projects", icon: <HiBriefcase />, href: "#projects" },
+    { name: "Experience", icon: <HiAcademicCap/>, href:'#experience'},
+    { name: "Testimonials", icon: <HiStar/>, href:'#testimonial'},
     { name: "Services", icon: <HiCpuChip />, href: "#services" },
-    { name: "Work", icon: <HiBriefcase />, href: "#projects" },
     { name: "Contact", icon: <HiChatBubbleLeftRight />, href: "#contact" },
   ];
 
